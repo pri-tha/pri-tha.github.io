@@ -1,0 +1,198 @@
+body{ width: 100%;
+		background-color: #333;
+		margin: auto;
+}
+a:link {
+  color: white;
+  text-shadow: 0 0 1px blue;
+}
+a:visited {
+  color: white;
+  text-shadow: 0 0 1px blue;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: white;
+  text-shadow: 0 0 1px blue;
+}
+
+
+  .header {
+  height: 10.7vw;
+  width: 100%; 
+  background-size: 100%;   
+  text-align: center;
+  background-image: url("devider.png");
+  margin-top: 1px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+
+ul {
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #111;
+  	font-family: "Lucida Console", Courier, monospace;
+  	letter-spacing: 2px;
+  	z-index: 10;
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+
+.active {
+  background-color: #a83234;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+#wrapper{width: 960px;
+			margin: auto;
+			margin-top: 40px;
+			display: grid;
+			grid-template-comumn: 100%;
+			grid-row-gap: 2vw;
+	 
+}
+#txt-wide{	width:100%;
+				float: left;
+				border-bottom: 5px #a83234 solid;
+				border-left: 5px #a83234 solid;
+				border-top: 5px #c9c040 solid;
+				border-right: 5px #c9c040 solid;
+				background-color: #111;
+				font-family: Impact, Charcoal, sans-serif;
+				font-size: 20px;
+				color: whitesmoke; 
+				text-align: left; 
+				padding: 10px;
+}
+
+#hm-dp {width: 331px;
+			height: 331px;
+			 float: right; 
+
+}
+
+#hm-txt{ width: 619px;
+			height: 331px;
+			float: right;
+			background-size: 100%;			
+			overflow: hidden;
+}
+
+
+
+#email{width:100%; 
+		float: none; 
+		bottom: 0px; 
+		padding-bottom: 3px;
+		font-family: "Lucida Console", Courier, monospace; 
+		color: whitesmoke;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 15px;
+		padding-bottom: 5px;
+}
+
+
+
+h1{font-family: 'Great Vibes', cursive; 
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px black;
+	color: white;
+	margin: 40px;
+}
+h2{
+	    font-family: 'Lobster', cursive; 
+	font-size: 30px;
+	text-shadow: 0 0 0.5px black;
+	color:white;
+	text-decoration:underline;
+	text-align:center; 
+}
+
+@media screen and (max-width:959px){
+						#wrapper{ width: 100%;
+						}
+						#hm-dp{ width: 34vw;
+									height: 34vw;
+									
+						}
+						#hm-txt{ width: 64vw;
+									height: 34vw;
+									left: 0px;
+						}
+						h1{ font-size: 4vw;;
+						}
+						#email p{ font-size: 15px;
+						
+						}
+						
+}
+
+@media screen and (max-width:640px){
+						#wrapper{ width: 100%;
+						}
+						
+						
+						#hm-dp{ width: 100%;
+									height: auto;
+									
+						}
+						
+						
+						#hm-txt{ width: 100%;
+									height: auto;
+						}
+						
+						
+						h1{ font-size: 30px;;
+						}
+						
+						
+						#txt-wide{width: 97%;
+							height: 100%;
+							margin-left: 3px;
+							margin-right: 3px;
+							margin-right: 3%;
+							padding: 10px
+						}
+						
+						
+						img {width: 50%; margin: auto;}
+						p{font-size: auto;}
+						
+}
