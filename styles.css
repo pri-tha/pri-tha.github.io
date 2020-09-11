@@ -1,11 +1,11 @@
 @font-face {
   font-family: H-I;
-  src: url(fonts/PermanentMarker/PermanentMarker-Regular.woff2) format("woff2"),
-  			url(fonts/PermanentMarker/PermanentMarker-Regular.woff) format("woff"),
-  			url(fonts/PermanentMarker/PermanentMarker-Regular.ttf) format("truetype"),
-  			url(fonts/PermanentMarker/PermanentMarker-Regular.svg) format("svg"),
-  			url(fonts/PermanentMarker/PermanentMarker-Regular.otf) format("opentype"),
-  			url(fonts/PermanentMarker/PermanentMarker-Regular.eot) format("embedded-opentype");
+  src: url(fonts/GreatVibes/GreatVibes-Regular.woff2) format("woff2"),
+  			url(fonts/GreatVibes/GreatVibes-Regular.woff) format("woff"),
+  			url(fonts/GreatVibes/GreatVibes-Regular.ttf) format("truetype"),
+  			url(fonts/GreatVibes/GreatVibes-Regular.svg) format("svg"),
+  			url(fonts/GreatVibes/GreatVibes-Regular.otf) format("opentype"),
+  			url(fonts/GreatVibes/GreatVibes-Regular.eot) format("embedded-opentype");
 }
 
 @font-face {
@@ -139,6 +139,7 @@ li a:hover:not(.active) {
 #hm-txt{ width: 619px;
 			height: 331px;
 			float: right;
+			padding: 15px;
 			background-size: 100%;			
 			overflow: hidden;
 }
@@ -161,12 +162,11 @@ li a:hover:not(.active) {
 
 
 h1{font-family: H-I, cursive; 
-	font-size: 40px;
+	font-size: 50px;
 	text-align: center;
 	font-weight: bold;
 	text-shadow: 0px 0px 5px black;
 	color: white;
-	margin: 10px;
 }
 h2{
 	font-family: H-II, cursive; 
@@ -189,7 +189,7 @@ h2{
 									height: 34vw;
 									left: 0px;
 						}
-						h1{ font-size: 4vw;;
+						h1{ font-size: 5vw;;
 						}
 						#email p{ font-size: 15px;
 						
