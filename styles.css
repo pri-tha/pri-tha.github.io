@@ -1,3 +1,33 @@
+@font-face {
+  font-family: H-I;
+  src: url(fonts/PermanentMarker/PermanentMarker-Regular.woff2) format("woff2"),
+  			url(fonts/PermanentMarker/PermanentMarker-Regular.woff) format("woff"),
+  			url(fonts/PermanentMarker/PermanentMarker-Regular.ttf) format("truetype"),
+  			url(fonts/PermanentMarker/PermanentMarker-Regular.svg) format("svg"),
+  			url(fonts/PermanentMarker/PermanentMarker-Regular.otf) format("opentype"),
+  			url(fonts/PermanentMarker/PermanentMarker-Regular.eot) format("embedded-opentype");
+}
+
+@font-face {
+  font-family: H-II;
+  src: url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff2) format("woff2"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff) format("woff"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.ttf) format("truetype"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.svg) format("svg"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.otf) format("opentype"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.eot) format("embedded-opentype");
+}
+@font-face {
+  font-family: nav;
+  src: url(fonts/Helenapu/Helenapu.woff2) format("woff2"),
+  			url(fonts/Helenapu/Helenapu.woff) format("woff"),
+  			url(fonts/Helenapu/Helenapu.ttf) format("truetype"),
+  			url(fonts/Helenapu/Helenapu.svg) format("svg"),
+  			url(fonts/Helenapu/Helenapu.otf) format("opentype"),
+  			url(fonts/Helenapu/Helenapu.eot) format("embedded-opentype");
+}
+
+
 body{ width: 100%;
 		background-color: #333;
 		margin: auto;
@@ -22,7 +52,9 @@ a:active {
   .header {
   height: 10.7vw;
   width: 100%; 
-  background-size: 100%;   
+  background-size: 100%;
+  border-top: 5px #c9c040 solid;
+  border-bottom: 5px #a83234 solid;  
   text-align: center;
   background-image: url("devider.png");
   margin-top: 1px;
@@ -40,7 +72,7 @@ ul {
   	padding: 0;
   	overflow: hidden;
   	background-color: #111;
-  	font-family: "Lucida Console", Courier, monospace;
+  	font-family: nav, serif;
   	letter-spacing: 2px;
   	z-index: 10;
 }
@@ -111,13 +143,14 @@ li a:hover:not(.active) {
 			overflow: hidden;
 }
 
-
+#txt-wide p{font-family: Ariel, sans-serif;
+}
 
 #email{width:100%; 
 		float: none; 
 		bottom: 0px; 
 		padding-bottom: 3px;
-		font-family: "Lucida Console", Courier, monospace; 
+		font-family: 'Courier New', monospace; 
 		color: whitesmoke;
 		font-size: 15px;
 		text-align: center;
@@ -127,22 +160,23 @@ li a:hover:not(.active) {
 
 
 
-h1{font-family: 'Great Vibes', cursive; 
+h1{font-family: H-I, cursive; 
 	font-size: 40px;
 	text-align: center;
 	font-weight: bold;
 	text-shadow: 0px 0px 5px black;
 	color: white;
-	margin: 40px;
+	margin: 10px;
 }
 h2{
-	    font-family: 'Lobster', cursive; 
+	font-family: H-II, cursive; 
 	font-size: 30px;
 	text-shadow: 0 0 0.5px black;
 	color:white;
 	text-decoration:underline;
 	text-align:center; 
 }
+
 
 @media screen and (max-width:959px){
 						#wrapper{ width: 100%;
