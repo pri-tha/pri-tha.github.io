@@ -29,7 +29,7 @@
 
 
 body{ width: 100%;
-		background-color: #333;
+		background-color: #111;
 		margin: auto;
 }
 a:link {
@@ -122,6 +122,7 @@ li a:hover:not(.active) {
 				border-left: 5px #a83234 solid;
 				border-top: 5px #c9c040 solid;
 				border-right: 5px #c9c040 solid;
+				background-color: #333;
 				font-family: Impact, Charcoal, sans-serif;
 				font-size: 20px;
 				color: whitesmoke; 
@@ -212,7 +213,7 @@ h2{
 						}
 						
 						
-						h1{ font-size: 30px;;
+						h1{ font-size: 30px;
 						}
 						
 						
@@ -221,7 +222,8 @@ h2{
 							margin-left: 3px;
 							margin-right: 3px;
 							margin-right: 3%;
-							padding: 10px
+							padding: 10px;
+							border-width: 2px;
 						}
 						
 						
