@@ -29,7 +29,7 @@
 
 
 body{ width: 100%;
-		background-color: #111;
+		background-color: #6b6b6b;
 		margin: auto;
 }
 a:link {
@@ -113,31 +113,27 @@ li a:hover:not(.active) {
 			margin-top: 40px;
 			display: grid;
 			grid-template-comumn: 100%;
-			grid-row-gap: 2vw;
+			grid-row-gap: 40px;
 	 
 }
 #txt-wide{	width:100%;
 				float: left;
-				border-bottom: 5px #a83234 solid;
-				border-left: 5px #a83234 solid;
-				border-top: 5px #c9c040 solid;
-				border-right: 5px #c9c040 solid;
 				background-color: #333;
+				box-shadow: 0px 0px 10px black;
 				font-family: Impact, Charcoal, sans-serif;
 				font-size: 20px;
 				color: whitesmoke; 
-				text-align: left; 
-				padding: 10px;
+				text-align: left;
 }
 
-#hm-dp {width: 331px;
-			height: 331px;
+#hm-dp {width: 335px;
+			height: 335px;
 			 float: right; 
 
 }
 
-#hm-txt{ width: 619px;
-			height: 331px;
+#hm-txt{ width: 625px;
+			height: 333px;
 			float: right;
 			padding: 15px;
 			background-size: 100%;			
@@ -145,6 +141,13 @@ li a:hover:not(.active) {
 }
 
 #txt-wide p{font-family: Ariel, sans-serif;
+				margin: 20px;
+}
+#txt-wide img{ margin: 20px;
+					box-shadow: 0 0 10px black;
+}
+#txt-wide #hm-dp img{ margin: 0px;
+							box-shadow: 0 0 0 black;
 }
 
 #email{width:100%; 
@@ -155,7 +158,7 @@ li a:hover:not(.active) {
 		color: whitesmoke;
 		font-size: 15px;
 		text-align: center;
-		margin-top: 15px;
+		margin-top: 40px;
 		padding-bottom: 5px;
 }
 
@@ -166,13 +169,13 @@ h1{font-family: H-I, cursive;
 	text-align: center;
 	font-weight: bold;
 	text-shadow: 0px 0px 5px black;
-	color: white;
+	color: whitesmoke;
 }
 h2{
 	font-family: H-II, cursive; 
 	font-size: 30px;
-	text-shadow: 0 0 0.5px black;
-	color:white;
+	text-shadow: 0px 0px 3px black;
+	color: #c9c040;
 	text-decoration:underline;
 	text-align:center; 
 }
@@ -181,12 +184,12 @@ h2{
 @media screen and (max-width:959px){
 						#wrapper{ width: 100%;
 						}
-						#hm-dp{ width: 34vw;
-									height: 34vw;
+						#hm-dp{ width: 36vw;
+									height: 36vw;
 									
 						}
 						#hm-txt{ width: 64vw;
-									height: 34vw;
+									height: 36vw;
 									left: 0px;
 						}
 						h1{ font-size: 5vw;;
@@ -217,13 +220,10 @@ h2{
 						}
 						
 						
-						#txt-wide{width: 97%;
+						#txt-wide{width: 100%;
 							height: 100%;
 							margin-left: 3px;
 							margin-right: 3px;
-							margin-right: 3%;
-							padding: 10px;
-							border-width: 2px;
 						}
 						
 						
