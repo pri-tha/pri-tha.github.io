@@ -1,11 +1,11 @@
 @font-face {
   font-family: H-I;
-  src: url(fonts/GreatVibes/GreatVibes-Regular.woff2) format("woff2"),
-  			url(fonts/GreatVibes/GreatVibes-Regular.woff) format("woff"),
-  			url(fonts/GreatVibes/GreatVibes-Regular.ttf) format("truetype"),
-  			url(fonts/GreatVibes/GreatVibes-Regular.svg) format("svg"),
-  			url(fonts/GreatVibes/GreatVibes-Regular.otf) format("opentype"),
-  			url(fonts/GreatVibes/GreatVibes-Regular.eot) format("embedded-opentype");
+  src: url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff2) format("woff2"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff) format("woff"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.ttf) format("truetype"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.svg) format("svg"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.otf) format("opentype"),
+  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.eot) format("embedded-opentype");
 }
 
 @font-face {
@@ -140,9 +140,7 @@ li a:hover:not(.active) {
 			overflow: hidden;
 }
 
-#txt-wide p{font-family: Ariel, sans-serif;
-				margin: 20px;
-}
+
 #txt-wide img{ margin: 20px;
 					box-shadow: 0 0 10px black;
 }
@@ -165,17 +163,17 @@ li a:hover:not(.active) {
 
 
 h1{font-family: H-I, cursive; 
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
-	font-weight: bold;
-	text-shadow: 0px 0px 5px black;
+	font-weight: normal;
+	text-shadow: 0px 0px 0px black;
 	color: whitesmoke;
 }
 h2{
 	font-family: H-II, cursive; 
 	font-size: 30px;
 	text-shadow: 0px 0px 3px black;
-	color: #c9c040;
+	color: whitesmoke;
 	text-decoration:underline;
 	text-align:center; 
 }
