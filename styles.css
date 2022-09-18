@@ -29,23 +29,23 @@
 
 
 body{ width: 100%;
-		background-color: #6b6b6b;
+		background-color: #7191b0;
 		margin: auto;
 }
 a:link {
-  color: white;
-  text-shadow: 0 0 1px blue;
+  color: #030340;
+  text-shadow: 0 0 0 blue;
 }
 a:visited {
-  color: white;
-  text-shadow: 0 0 1px blue;
+  color: #030340;
+  text-shadow: 0 0 0 blue;
 }
 a:hover {
-  color: white;
+  color: #030340;
 }
 a:active {
-  color: white;
-  text-shadow: 0 0 1px blue;
+  color: #030340;
+  text-shadow: 0 0 0 blue;
 }
 
 
@@ -71,10 +71,11 @@ ul {
   	margin: 0;
   	padding: 0;
   	overflow: hidden;
-  	background-color: #111;
+  	background-color: #546c85;
   	font-family: nav, serif;
   	letter-spacing: 2px;
   	z-index: 10;
+    text-shadow: 0 0 2px red;
 }
 
 
@@ -86,13 +87,22 @@ li a {
   padding: 1vw;
   text-decoration: none;
 }
-
+li a:link {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+li a:visited {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
 li a:hover:not(.active) {
+  color: white;
   background-color: #333;
 }
 
 .active {
-  background-color: #a83234;
+    color: white;
+  background-color: #7191b0;
 }
 
 * {
@@ -118,11 +128,11 @@ li a:hover:not(.active) {
 }
 #txt-wide{	width:100%;
 				float: left;
-				background-color: #333;
+				background-color: #cfd1e6;
 				box-shadow: 0px 0px 10px black;
 				font-family: Impact, Charcoal, sans-serif;
 				font-size: 20px;
-				color: whitesmoke; 
+				color: #1c0c01; 
 				text-align: left;
 }
 
@@ -153,7 +163,7 @@ li a:hover:not(.active) {
 		bottom: 0px; 
 		padding-bottom: 3px;
 		font-family: 'Courier New', monospace; 
-		color: whitesmoke;
+		color: black;
 		font-size: 15px;
 		text-align: center;
 		margin-top: 40px;
@@ -166,20 +176,29 @@ h1{font-family: H-I, cursive;
 	font-size: 40px;
 	text-align: center;
 	font-weight: normal;
-	text-shadow: 0px 0px 0px black;
-	color: whitesmoke;
+	text-shadow: 0px 0px 0px whitesmoke;
+	color: #1c0c01;
 	margin-right: 3vw;
 }
 h2{
 	font-family: H-II, cursive; 
 	font-size: 30px;
-	text-shadow: 0px 0px 3px black;
-	color: whitesmoke;
+	text-shadow: 0px 0px 3px whitesmoke;
+	color: #1c0c01;
 	text-decoration:underline;
-	text-align:center; 
+	text-align:left; 
+    margin-left: 3vw;
 }
 
+p{
+    margin: 3vw;
+    font-size: 16px;
+    letter-spacing: 0.5px; 
+    line-height: 1.5;
+    word-spacing: 0.75px;
+    color: #1c0c01;
 
+}
 @media screen and (max-width:959px){
 						#wrapper{ width: 100%;
 						}
@@ -193,7 +212,7 @@ h2{
 						}
 						h1{ font-size: 5vw;;
 						}
-						#email p{ font-size: 15px;
+						#email p{ font-size: 14px;
 						
 						}
 						
