@@ -1,1 +1,1 @@
-# Hello everyone. This is my homepage. 
+# Homepage of Pritha Sarkar. 
