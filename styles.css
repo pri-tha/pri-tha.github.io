@@ -1,254 +1,44 @@
-@font-face {
-  font-family: H-I;
-  src: url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff2) format("woff2"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff) format("woff"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.ttf) format("truetype"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.svg) format("svg"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.otf) format("opentype"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.eot) format("embedded-opentype");
+body {
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-@font-face {
-  font-family: H-II;
-  src: url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff2) format("woff2"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff) format("woff"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.ttf) format("truetype"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.svg) format("svg"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.otf) format("opentype"),
-  			url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.eot) format("embedded-opentype");
-}
-@font-face {
-  font-family: nav;
-  src: url(fonts/Helenapu/Helenapu.woff2) format("woff2"),
-  			url(fonts/Helenapu/Helenapu.woff) format("woff"),
-  			url(fonts/Helenapu/Helenapu.ttf) format("truetype"),
-  			url(fonts/Helenapu/Helenapu.svg) format("svg"),
-  			url(fonts/Helenapu/Helenapu.otf) format("opentype"),
-  			url(fonts/Helenapu/Helenapu.eot) format("embedded-opentype");
-}
-
-
-body{ width: 100%;
-		background-color: #7191b0;
-		margin: auto;
-}
-a:link {
-  color: #030340;
-  text-shadow: 0 0 0 blue;
-}
-a:visited {
-  color: #030340;
-  text-shadow: 0 0 0 blue;
-}
-a:hover {
-  color: #030340;
-}
-a:active {
-  color: #030340;
-  text-shadow: 0 0 0 blue;
-}
-
-
-  .header {
-  height: 10.7vw;
-  width: 100%; 
-  background-size: 100%;
-  border-top: 5px #c9c040 solid;
-  border-bottom: 5px #a83234 solid;  
-  text-align: center;
-  background-image: url("devider.png");
-  margin-top: 1px;
-  margin-bottom: 5px;
+nav ul {
+  list-style: none;
+  background: #333;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
-
-ul {
-	position: -webkit-sticky; /* Safari */
-  	position: sticky;
-  	top: 0;
-  	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
-  	overflow: hidden;
-  	background-color: #546c85;
-  	font-family: nav, serif;
-  	letter-spacing: 2px;
-  	z-index: 10;
-    text-shadow: 0 0 2px red;
+nav ul li {
+  float: right;
 }
 
-
-
-li a {
+nav ul li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 1vw;
+  padding: 14px 20px;
   text-decoration: none;
-}
-li a:link {
   color: white;
-  text-shadow: 1px 1px 1px black;
-}
-li a:visited {
-  color: white;
-  text-shadow: 1px 1px 1px black;
-}
-li a:hover:not(.active) {
-  color: white;
-  background-color: #333;
 }
 
-.active {
-    color: white;
-  background-color: #7191b0;
+nav ul li a:hover, nav ul li a.active {
+  background: #111;
 }
 
-* {
-  box-sizing: border-box;
+#wrapper {
+  margin: 20px;
+  padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-#wrapper{width: 960px;
-			margin: auto;
-			margin-top: 40px;
-			display: grid;
-			grid-template-comumn: 100%;
-			grid-row-gap: 40px;
-	 
-}
-#txt-wide{	width:100%;
-				float: left;
-				background-color: #cfd1e6;
-				box-shadow: 0px 0px 10px black;
-				font-family: Impact, Charcoal, sans-serif;
-				font-size: 20px;
-				color: #1c0c01; 
-				text-align: left;
+#email {
+  text-align: center;
+  margin: 20px;
 }
 
-#hm-dp {width: 335px;
-			height: 335px;
-			 float: right; 
-
+img {
+  max-width: 100%;
+  height: auto;
 }
-
-#hm-txt{ width: 625px;
-			height: 333px;
-			float: right;
-			padding: 15px;
-			background-size: 100%;			
-			overflow: hidden;
-}
-
-
-#txt-wide img{ margin: 20px;
-					box-shadow: 0 0 10px black;
-}
-#txt-wide #hm-dp img{ margin: 0px;
-							box-shadow: 0 0 0 black;
-}
-
-#email{width:100%; 
-		float: none; 
-		bottom: 0px; 
-		padding-bottom: 3px;
-		font-family: 'Courier New', monospace; 
-		color: black;
-		font-size: 15px;
-		text-align: center;
-		margin-top: 40px;
-		padding-bottom: 5px;
-}
-
-
-
-h1{font-family: H-I, cursive; 
-	font-size: 40px;
-	text-align: center;
-	font-weight: normal;
-	text-shadow: 0px 0px 0px whitesmoke;
-    text-decoration:underline;
-	color: #1c0c01;
-	margin-right: 3vw;
-}
-h2{
-	font-family: H-II, cursive; 
-	font-size: 30px;
-	text-shadow: 0px 0px 3px whitesmoke;
-	color: #1c0c01;
-	
-	text-align:left; 
-    margin-left: 3vw;
-}
-
-p{
-    margin: 3vw;
-    font-size: 16px;
-    letter-spacing: 0.5px; 
-    line-height: 1.5;
-    word-spacing: 0.75px;
-    color: #1c0c01;
-
-}
-@media screen and (max-width:959px){
-						#wrapper{ width: 100%;
-						}
-						#hm-dp{ width: 36vw;
-									height: 36vw;
-									
-						}
-						#hm-txt{ width: 64vw;
-									height: 36vw;
-									left: 0px;
-						}
-						h1{ font-size: 5vw;;
-						}
-						#email p{ font-size: 14px;
-						
-						}
-						
-}
-
-@media screen and (max-width:640px){
-						#wrapper{ width: 100%;
-						}
-						
-						
-						#hm-dp{ width: 100%;
-									height: auto;
-									
-						}
-						
-						
-						#hm-txt{ width: 100%;
-									height: auto;
-						}
-						
-						
-						h1{ font-size: 30px;
-						}
-						
-						
-						#txt-wide{width: 100%;
-							height: 100%;
-							margin-left: 3px;
-							margin-right: 3px;
-						}
-						
-						
-						img {width: 95vw;}
-						p{font-size: auto;}
-						
-}
-
-
