@@ -126,7 +126,7 @@ p {
   justify-content: flex-end;
   background-color: #2c3e50;
   padding: 0 1rem;
-  font-family: nav, sans-serif;
+  font-family: sans-serif;
   letter-spacing: 0px;
   z-index: 100;
 }
