@@ -1,44 +1,166 @@
-body {
-  font-family: serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+@font-face {
+  font-family: H-I;
+  src: url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff2) format("woff2"),
+       url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff) format("woff"),
+       url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.ttf) format("truetype"),
+       url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.otf) format("opentype");
 }
 
-nav ul {
-  list-style: none;
-  background: #333;
+@font-face {
+  font-family: H-II;
+  src: url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff2) format("woff2"),
+       url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.woff) format("woff"),
+       url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.ttf) format("truetype"),
+       url(fonts/GrenzeGotisch/GrenzeGotisch-VariableFontwght.otf) format("opentype");
+}
+
+@font-face {
+  font-family: nav;
+  src: url(fonts/Helenapu/Helenapu.woff2) format("woff2"),
+       url(fonts/Helenapu/Helenapu.woff) format("woff"),
+       url(fonts/Helenapu/Helenapu.ttf) format("truetype"),
+       url(fonts/Helenapu/Helenapu.otf) format("opentype");
+}
+
+body {
+  width: 100%;
   margin: 0;
-  padding: 0;
+  background-color: #f4f6f9;
+  color: #2d2d2d;
+  font-family: serif;
+}
+
+a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+a:hover {
+  color: #3498db;
+}
+
+/* Header bar with divider */
+.header {
+  height: 10vw;
+  width: 100%; 
+  background-image: url("devider.png");
+  background-size: cover;
+  border-top: 5px #f1c40f solid;
+  border-bottom: 5px #e74c3c solid;
+  text-align: center;
+  margin-bottom: 5px;
   overflow: hidden;
 }
 
-nav ul li {
-  float: right;
-}
+* { box-sizing: border-box; }
 
-nav ul li a {
-  display: block;
-  padding: 14px 20px;
-  text-decoration: none;
-  color: white;
-}
-
-nav ul li a:hover, nav ul li a.active {
-  background: #111;
-}
-
+/* Layout wrapper */
 #wrapper {
-  margin: 20px;
-  padding: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;
+  padding: 0 1rem;
 }
 
+/* Content card */
+#txt-wide {
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Images */
+#txt-wide img {
+  margin: 20px auto;
+  display: block;
+  max-width: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+#txt-wide #hm-dp img { box-shadow: none; }
+
+/* Email footer */
 #email {
   text-align: center;
-  margin: 20px;
+  margin: 40px auto;
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  color: #555;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* Headings */
+h1 {
+  font-family: H-I, cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+h2 {
+  font-family: H-II, cursive;
+  font-size: 1.8rem;
+  color: #34495e;
+  margin: 1rem 0;
+}
+
+/* Paragraphs */
+p {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+.topnav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2c3e50;
+  padding: 0 1rem;
+  font-family: nav, sans-serif;
+  letter-spacing: 0px;
+  z-index: 100;
+}
+.topnav a {
+  color: #ecf0f1;
+  padding: 14px 20px;
+  transition: background 0.3s, color 0.3s;
+}
+.topnav a:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+.topnav a.active {
+  background-color: #3498db;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 959px) {
+  #wrapper { max-width: 100%; }
+  h1 { font-size: 2rem; }
+}
+@media screen and (max-width: 640px) {
+  #wrapper { padding: 0 0.5rem; }
+  h1 { font-size: 1.5rem; }
+  #txt-wide { padding: 1rem; }
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .topnav a {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+  }
 }
